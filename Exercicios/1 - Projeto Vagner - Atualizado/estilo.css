@@ -1,0 +1,196 @@
+@charset "utf-08";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: rgb(161, 175, 228);  
+}
+
+header{
+    /*background-color: rgb(150, 148, 148);*/
+    background-color: rgb(132, 129, 129);
+    min-height: 140px;
+    text-align: center;
+    color: white;
+    padding-top: 30px;
+    min-width: 300px;
+}
+
+header > h1{
+    font-size: 40px;
+    margin-bottom: 20px;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.3);
+}
+
+header > p{
+    font-size: 22px;
+    margin: auto;
+    min-width: 300px;
+    max-width: 500px;
+    padding-right: 10px;
+    padding-left: 10px;
+
+    
+}
+
+nav{
+    background-color: rgb(132, 129, 129);
+    padding: 10px;
+    border: 0.5px solid rgb(139, 137, 137);
+    box-shadow: 2px 2px 8px rgba(198, 197, 197, 0.583);
+    min-width: 300px;
+}
+
+nav a{
+    color: white;
+    margin-right: 10px;
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 5px;
+    transition-duration: 1s;
+    font-weight: bold;/*deixa letra em destaque, negrito*/
+}
+
+nav a:hover{
+    background-color:rgba(142, 188, 190, 0.786)
+    
+}
+
+main{
+    min-width: 300px;
+    max-width: 1000px;
+    margin: auto;
+    line-height: 30px; /*espaço entre linhas*/
+    margin-bottom: 30px;
+    background-color: white;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.49);
+}
+
+main h1{
+    text-align: center;
+    padding-top: 25px;
+    margin-bottom: 10px;
+    color: rgb(71, 71, 186);
+    font-size: 30px;
+    
+}
+
+main h2{
+    
+    color: rgb(71, 71, 186);
+    background-image: linear-gradient(to right, rgba(124, 124, 189, 0.712), transparent );
+    border-radius: 5px;
+    padding: 3px;
+    font-size: 25px;
+    text-indent: 8px;
+}
+
+main p{
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 18px;/*tamanho das letras*/
+    text-indent: 30px;/*Espaço no inicio do paragráfo*/
+    text-align: justify;
+}
+
+
+main strong{
+    color: rgb(139, 155, 210);
+    padding: 2px;
+    border-radius: 2px;
+    font-weight: bold; /*fonte em negrito*/
+}
+
+a.externo{
+    padding: 5px;
+    border-radius: 2px;
+    color: rgb(71, 71, 186);
+}
+
+a.externo:hover{
+    background-color:rgba(142, 188, 190, 0.786);
+    text-decoration: none;
+}
+
+.externo:hover::after{
+    content: '\00A0\1F517';
+}
+
+main img{
+    width: 100%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-width: 300px;
+}
+
+main img.pequena{
+    max-width: 350px;
+    display: block; /*esta propriedade cria um bloco para imagem ou uma caixa*/
+    margin: auto; /*e esta alinha a caixa a cima ao centro*/
+
+}
+
+div.video{
+    background-color: rgb(21, 32, 59);
+    margin-top: 20px;
+    margin-bottom: 20px;
+    min-width: 300px;
+}
+
+iframe{
+    width: 85%;
+    display: block;
+    margin: auto;
+    padding: 40px 0px 40px 0px; 
+}
+
+aside h3{
+    background-color: rgb(21, 32, 59);
+    margin: 20px 0px 0px -5px;
+    color: white;
+    padding: 5px;
+    border-radius: 10px 10px 0px 0px;
+    width: 100%;
+    text-align: center;
+
+}
+aside{
+    background-color:rgb(188, 184, 184) ;
+    margin: 0px 15px 0px 15px;
+    padding: 0px 5px 10px 5px;
+    border-radius: 10px 10px 10px 10px;
+}
+
+aside > ul{
+    list-style-position: inside;/*coloca os icones ao lado de dentro da caixa*/
+    columns: 2;/*divide so itens em duas colunas*/
+    list-style-type: '\2714\00A0\00A0'; /*para colocar este icone, basta pegar o codigo no (ex. emojipidia) e colocar a barra invertida, e o codigo (00A0) é para dar espaço sem quebra de linha, obs. Isso não é compativél com todos os navegadores*/
+    margin-left: 10px;
+    min-width: 300px;
+}
+
+article p.ajuste{
+    font-size: 16px;
+    text-align: center;
+}
+
+footer{
+    /*background-color:rgb(21, 32, 59);*/
+    padding: 5px;
+    text-align: center;
+    color: white;
+    min-width: 300px;
+    background-color: rgb(132, 129, 129);
+}
+
+footer strong{
+    color: rgb(21, 32, 59);
+}
+
+
+
+

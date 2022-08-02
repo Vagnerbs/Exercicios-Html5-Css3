@@ -1,0 +1,49 @@
+@charset "utf-8";
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+body{
+    background-color: gray;
+}
+
+main{
+    background-color: white;
+    padding: 20px;
+    margin:auto;
+    min-width: 260px;
+    max-width: 800px;
+}
+
+main h1{
+    color: blue;
+    text-align: center;
+    padding-bottom: 10px;
+    text-decoration: underline;
+    font-size: 35px;
+}
+
+main p{
+    font-size: 20px; /*Tamanho das letras*/
+    line-height: 22px; /*Espaço entre as linhas*/
+    text-indent: 30px; /*Espaço no inicio do paragrafo*/
+    text-align: justify;/*Ajusta o tamanho das linha do texto pegando do inicio ao fim*/
+}
+
+main img{
+    width: 100%;
+    margin: 10px 0px 10px 0px;
+}
+
+footer{
+    background-color: white;
+    padding: 5px;
+    text-align: center;
+    border: 1px solid rgba(0, 0, 0, 0.295);
+}
+
+strong{
+    color: blue;
+}
