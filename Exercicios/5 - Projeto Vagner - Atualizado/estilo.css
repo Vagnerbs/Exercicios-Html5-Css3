@@ -1,0 +1,107 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');/*Nunca traduza para o português o site do google fonts, se traduzir da erro.*/
+
+:root{ /*Neste campo se coloca as variaveis das fontes que ira usar, fica mais fácil para o desenvolvimento do projeto*/
+    --fonte1:Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursive;
+    --fonte3: 'Sriracha', cursive;
+}
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+html,body{
+    min-height: 100vh;/*Obs: vh porque se trata da altura da viewport, e quero que o minimo seja 100% da tela, também poderia usar a "%" no lugar de "vh" se fosse largura seria vw*/
+    background-color: darkgray;
+    font-family: var(--fonte1);
+}
+
+header{
+    background-color: black;
+    color: white;
+    text-align: center;
+
+}
+
+header > h1{
+    padding-top: 50px;
+    /*text-transform: uppercase; Obs: com este elemento podemos transformar todas as letras ou em maiusculas ou em minusculas*/
+    font-variant: small-caps;/*temos esse elemento que deixa a letra no mesmo formato das maiusculas, porém, com a primeira letra maior*/
+    font-family: var(--fonte2);
+    font-size: 10vw;
+}
+
+header > p{
+    padding-bottom: 50px;
+    font-size: 3vw;
+}
+
+header a, footer a{
+    color: white;
+    text-decoration: none;
+    font-weight: bolder;/*Negrito*/
+}
+
+header a:hover, footer a:hover{
+    text-decoration: underline;
+}
+
+section{
+    padding-top: 10vh;/*também posso usar a %*/
+    padding-bottom: 10vh;/*desta forma o site ja cria um efeito um pouco responsivo na altura, com os 10vh se adaptando ao tamanho da tela*/
+    line-height: 2em;/*espaçamento entre as linhas*/
+    padding-left: 30px;
+    font-family: var(--fonte3);
+    font-size: 4vw;/*tamanho das letras, neste caso 4% da minha viewport*/
+}
+
+section > p{
+    padding-bottom: 2em;
+}
+
+section.normal{
+    background-color: white;
+    color: black;
+}
+
+section.imagem{
+    background-color: rgb(51,51,51);
+    color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.476);/*Sombra interna*/
+    background-attachment: fixed;/*Está propriedade fixa a imagem no fundo da tela, ao rolar a mesma a imagem ficará parada.*/
+}
+
+section.imagem > p{
+    display: inline-block;/*Está propriedade faz a caixa se adaptar ao tamanho do conteúdo*/
+    padding: 5px;
+    background-color: rgba(0, 0, 0, 0.515);
+    text-shadow: 1px 1px 0px black;
+
+}
+
+section#img01{
+    background-image: url(imagens/background001.jpg);
+    background-position: right center;
+    background-size: cover;/*Muito importante está propriedade, ao fixar a imagem na tela ela se ajusta exatamente aonde configurei, e não distorce a imagem ao diminuir e aumentar, fazendo os cortes necessarios na foto*/
+}
+
+section#img02{
+    background-image: url(imagens/background002.jpg);
+    background-position: right center;
+    background-size: cover;/*Muito importante está propriedade, ao fixar a imagem na tela ela se ajusta exatamente aonde configurei, e não distorce a imagem ao diminuir e aumentar, fazendo os cortes necessarios na foto*/
+}
+
+footer{
+    background-color: black;
+    text-align: center;
+    color: white;
+    padding: 10px;
+    font-size: 3vw;
+}
